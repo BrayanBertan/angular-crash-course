@@ -1,0 +1,17 @@
+<router-outlet></router-outlet>
+
+
+<a routerLink='/first'>first</a>
+<hr>
+<a routerLink='/second'>second</a>
+<hr>
+<a routerLink='/third'>third</a>
+<hr>
+<a routerLink='/fourth'>fourth</a>
+
+
+<button (click)="goToRoute('/third')">go to third</button>
+
+
+<input type="text" [formControl]="testProp" name="testProp">
+<p>{{testProp.value}}</p>
